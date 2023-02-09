@@ -1220,14 +1220,21 @@ h6 {
   fill: transparent;
 }
 
-.graph-one path {
+.graph-one path,
+.graph-six path {
   stroke-dasharray: 150;
   stroke-dashoffset: 150;
 }
 
-._watcher-view .graph-one path {
+._watcher-view .graph-one path,
+._watcher-view .graph-six path {
   -webkit-animation: patt 1s linear forwards 0.1s;
           animation: patt 1s linear forwards 0.1s;
+}
+
+._watcher-view .graph-six path {
+  -webkit-animation: patt 1s linear forwards 1s;
+          animation: patt 1s linear forwards 1s;
 }
 
 @-webkit-keyframes patt {
